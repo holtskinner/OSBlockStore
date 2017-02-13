@@ -5,10 +5,13 @@
 extern "C" {
 #endif
 
-#include <stdlib.h>
+#include <limits.h>
 #include <stdbool.h>
+#include <stdint.h>
+#include <stdlib.h>
 
-// Declaring the struct but not implementing in the header allows us to prevent users
+// Declaring the struct but not implementing in the header allows us to prevent
+// users
 //  from using the object directly and monkeying with the contents
 // They can only create pointers to the struct, which must be given out by us
 // This enforces a black box device, but it can be restricting
@@ -77,7 +80,8 @@ size_t block_store_get_total_blocks();
 /// \param buffer Data buffer to write to
 /// \return Number of bytes read, 0 on error
 ///
-size_t block_store_read(const block_store_t *const bs, const size_t block_id, void *buffer);
+size_t block_store_read(const block_store_t *const bs, const size_t block_id,
+                        void *buffer);
 
 ///
 /// Reads data from the specified buffer and writes it to the designated block
@@ -86,7 +90,8 @@ size_t block_store_read(const block_store_t *const bs, const size_t block_id, vo
 /// \param buffer Data buffer to read from
 /// \return Number of bytes written, 0 on error
 ///
-size_t block_store_write(block_store_t *const bs, const size_t block_id, const void *buffer);
+size_t block_store_write(block_store_t *const bs, const size_t block_id,
+                         const void *buffer);
 
 ///
 /// Imports BS device from the given file - for grads/bonus
@@ -96,17 +101,17 @@ size_t block_store_write(block_store_t *const bs, const size_t block_id, const v
 block_store_t *block_store_deserialize(const char *const filename);
 
 ///
-/// Writes the entirety of the BS device to file, overwriting it if it exists - for grads/bonus
+/// Writes the entirety of the BS device to file, overwriting it if it exists -
+/// for grads/bonus
 /// \param bs BS device
 /// \param filename The file to write to
 /// \return Number of bytes written, 0 on error
 ///
-size_t block_store_serialize(const block_store_t *const bs, const char *const filename);
-
+size_t block_store_serialize(const block_store_t *const bs,
+                             const char *const filename);
 
 #ifdef __cplusplus
 }
 #endif
-
 
 #endif
