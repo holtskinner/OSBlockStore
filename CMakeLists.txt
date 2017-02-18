@@ -1,15 +1,13 @@
 cmake_minimum_required (VERSION 2.8)
 project(assignment1)
 
-# set(CMAKE_C_FLAGS "-std=c11 -Wall -Wextra -Wshadow -Werror")
-# set(CMAKE_CXX_FLAGS "-std=c++11 -Wall -Wextra -Wshadow -Werror")
+set(CMAKE_C_FLAGS "-std=c11 -Wall -Wextra -Wshadow -Werror -I../include")
+set(CMAKE_CXX_FLAGS "-std=c++11 -Wall -Wextra -Wshadow -Werror -I../include")
 
-set(CMAKE_C_FLAGS "-std=c11 ")
-set(CMAKE_CXX_FLAGS "-std=c++11 ")
 # this is enough to get you started, but not quite enough to get it working out of the box
 # Read some documentation, do some googling, refer to things we've given you
 # cmake is popular, so someone on the internet has had your problem before
-include_directories (${CMAKE_CURRENT_DIRECTORY}/include)
+include_directories (${CMAKE_CURRENT_DIRECTORY}../include)
 
 add_library(bitmap SHARED src/bitmap.c)
 add_library(block_store SHARED src/block_store.c)

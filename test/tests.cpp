@@ -8,7 +8,7 @@
 */
 
 #include <gtest/gtest.h>
-#include "../include/block_store.h"
+#include "block_store.h"
 
 // Helpful constants...
 #define BITMAP_SIZE_BYTES 256         // 2^8 blocks.
