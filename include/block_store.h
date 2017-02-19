@@ -9,6 +9,7 @@ extern "C" {
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdlib.h>
+#include <string.h>
 
 // Declaring the struct but not implementing in the header allows us to prevent
 // users
@@ -90,7 +91,8 @@ size_t block_store_read(const block_store_t *const bs, const size_t block_id,
 /// \param buffer Data buffer to read from
 /// \return Number of bytes written, 0 on error
 ///
-size_t block_store_write(block_store_t *const bs, const size_t block_id, const void *buffer);
+size_t block_store_write(block_store_t *const bs, const size_t block_id,
+                         const void *buffer);
 
 ///
 /// Imports BS device from the given file - for grads/bonus
@@ -106,7 +108,8 @@ block_store_t *block_store_deserialize(const char *const filename);
 /// \param filename The file to write to
 /// \return Number of bytes written, 0 on error
 ///
-size_t block_store_serialize(const block_store_t *const bs, const char *const filename);
+size_t block_store_serialize(const block_store_t *const bs,
+                             const char *const filename);
 
 #ifdef __cplusplus
 }
