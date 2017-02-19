@@ -5,11 +5,15 @@
 extern "C" {
 #endif
 
+#include <fcntl.h>
 #include <limits.h>
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
 
 // Declaring the struct but not implementing in the header allows us to prevent
 // users

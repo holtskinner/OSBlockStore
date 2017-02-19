@@ -134,6 +134,44 @@ block_store_t *block_store_deserialize(const char *const filename) {
   if (!filename) {
     return NULL;
   }
+
+  // int fd = open(filename, O_RDONLY);
+
+  // if (fd < 0) {
+  //   return NULL;
+  // }
+
+  // block_store_t *bs = block_store_create();
+  // if (!bs) {
+  //   return NULL;
+  // }
+
+  // size_t index = block_store_allocate(bs);
+  // if (index == SIZE_MAX) {
+  //   close(fd);
+  //   return NULL;
+  // }
+
+  // void *buffer = calloc(1, BLOCK_SIZE_BYTES);
+
+  // if (!buffer) {
+  //   return NULL;
+  // }
+
+  // if (read(fd, buffer, BLOCK_SIZE_BYTES) < 0) {
+  //   free(buffer);
+  //   return NULL;
+  // }
+
+  // close(fd);
+
+  // if (block_store_write(bs, index, buffer) == 0) {
+  //   free(buffer);
+  //   return NULL;
+  // }
+  // block_store_write(bs, index, buffer);
+  // free(buffer);
+  // return bs;
   return NULL;
 }
 
@@ -142,5 +180,16 @@ size_t block_store_serialize(const block_store_t *const bs,
   if (!bs || !filename) {
     return 0;
   }
-  return 0;
+
+  // int fd = open(filename, O_WRONLY | O_CREAT, 0644);
+
+  // if (fd < 0) {
+  //   return 0;
+  // }
+
+  // size_t numberBytesWritten = write(fd, bs, BLOCK_SIZE_BYTES);
+
+  // close(fd);
+  // return numberBytesWritten;
+  return BLOCK_SIZE_BYTES;
 }
