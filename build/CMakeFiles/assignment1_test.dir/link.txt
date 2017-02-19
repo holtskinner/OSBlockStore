@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++11 -Wall -Wextra -Wshadow -Werror -I../include   CMakeFiles/assignment1_test.dir/test/tests.cpp.o  -o assignment1_test -rdynamic libblock_store.so libbitmap.so -lgtest -lpthread -Wl,-rpath,/home/skinnerh/os/assignment1_skinnerh/build 
