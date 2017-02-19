@@ -1,0 +1,10 @@
+/home/skinnerh/os/assignment1_skinnerh/build/CMakeFiles/test.dir
+/home/skinnerh/os/assignment1_skinnerh/build/CMakeFiles/edit_cache.dir
+/home/skinnerh/os/assignment1_skinnerh/build/CMakeFiles/rebuild_cache.dir
+/home/skinnerh/os/assignment1_skinnerh/build/CMakeFiles/install/local.dir
+/home/skinnerh/os/assignment1_skinnerh/build/CMakeFiles/install/strip.dir
+/home/skinnerh/os/assignment1_skinnerh/build/CMakeFiles/assignment1_test.dir
+/home/skinnerh/os/assignment1_skinnerh/build/CMakeFiles/block_store.dir
+/home/skinnerh/os/assignment1_skinnerh/build/CMakeFiles/list_install_components.dir
+/home/skinnerh/os/assignment1_skinnerh/build/CMakeFiles/install.dir
+/home/skinnerh/os/assignment1_skinnerh/build/CMakeFiles/bitmap.dir

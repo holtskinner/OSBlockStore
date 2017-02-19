@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC -std=c11 -Wall -Wextra -Wshadow -Werror -I../include  -shared -Wl,-soname,libbitmap.so -o libbitmap.so CMakeFiles/bitmap.dir/src/bitmap.c.o 

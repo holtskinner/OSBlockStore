@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/skinnerh/os/assignment1_skinnerh/include/bitmap.h
+stdint.h
+-
+stdlib.h
+-
+stddef.h
+-
+stdbool.h
+-
+
+/home/skinnerh/os/assignment1_skinnerh/src/bitmap.c
+../include/bitmap.h
+/home/skinnerh/os/assignment1_skinnerh/include/bitmap.h
+string.h
+-
+
